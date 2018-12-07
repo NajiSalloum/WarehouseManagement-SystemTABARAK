@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2C131734-135D-4E09-A16D-6B2D3490C8EC}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Tabarak</RootNamespace>
+    <AssemblyName>Tabarak</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="006frmActionStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="006frmActionStore.Designer.cs">
+      <DependentUpon>006frmActionStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00frmHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00frmHome.Designer.cs">
+      <DependentUpon>00frmHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00frmItems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00frmItems.Designer.cs">
+      <DependentUpon>00frmItems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="00frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="00frmMain.Designer.cs">
+      <DependentUpon>00frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="01frmCustomer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="01frmCustomer.Designer.cs">
+      <DependentUpon>01frmCustomer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="03frmBuying.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="03frmBuying.Designer.cs">
+      <DependentUpon>03frmBuying.cs</DependentUpon>
+    </Compile>
+    <Compile Include="04frmSelling.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="04frmSelling.Designer.cs">
+      <DependentUpon>04frmSelling.cs</DependentUpon>
+    </Compile>
+    <Compile Include="05frmStore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="05frmStore.Designer.cs">
+      <DependentUpon>05frmStore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="07frmStatictics.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="07frmStatictics.Designer.cs">
+      <DependentUpon>07frmStatictics.cs</DependentUpon>
+    </Compile>
+    <Compile Include="08frmBackup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="08frmBackup.Designer.cs">
+      <DependentUpon>08frmBackup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DB.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="006frmActionStore.resx">
+      <DependentUpon>006frmActionStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00frmHome.resx">
+      <DependentUpon>00frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00frmItems.resx">
+      <DependentUpon>00frmItems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="00frmMain.resx">
+      <DependentUpon>00frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="01frmCustomer.resx">
+      <DependentUpon>01frmCustomer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="03frmBuying.resx">
+      <DependentUpon>03frmBuying.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="04frmSelling.resx">
+      <DependentUpon>04frmSelling.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="05frmStore.resx">
+      <DependentUpon>05frmStore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="07frmStatictics.resx">
+      <DependentUpon>07frmStatictics.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="08frmBackup.resx">
+      <DependentUpon>08frmBackup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\items.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistisk.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storAction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backup1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\exit1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\items1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistisk1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storAction1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\homeBackgrund.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\WATG1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\payment2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sale11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\storAction11.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\customer1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\store11.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bCustomer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bBuy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bBuy1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bAction.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bStore.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bStore1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\first1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
